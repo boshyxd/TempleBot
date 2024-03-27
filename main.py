@@ -1,5 +1,12 @@
 import discord
 from discord.ext import commands
+import json
+import random
+
+# Load the quotes from the JSON file
+with open('quotes.json') as f:
+    quotes_data = json.load(f)
+quotes = quotes_data['quotes']
 
 # Set up the bot
 intents = discord.Intents.default()
@@ -20,6 +27,12 @@ async def on_ready():
 @bot.command()
 async def terry(ctx):
     await ctx.send("Terry Davis was the creator of TempleOS, a unique operating system he developed over a decade. He was a brilliant programmer and a fascinating individual with a complex personal life.")
+
+# Command to get a random quote from Terry Davis
+@bot.command()
+async def quote(ctx):
+    quote = random.choice(quotes)
+    await ctx.send(f"*{quote}* - Terry Davis")
 
 # Start the bot
 bot.run(token)
