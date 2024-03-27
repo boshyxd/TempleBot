@@ -1,5 +1,5 @@
 <div align="center">
- <img src="https://user-images.githubusercontent.com/30384265/228330064-af2d0aa3-2768-4e08-8124-45547c1649f8.png" alt="TempleBot Logo" width="200" height="200">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/TempleOS_logo.png" alt="TempleBot Logo" width="200" height="200">
  <h1>TempleBot</h1>
  <p>
    <b>A Discord bot dedicated to Terry Davis and TempleOS</b>
