@@ -30,3 +30,46 @@ TempleBot is a Discord bot that provides information about Terry Davis, the crea
 ```bash
 git clone https://github.com/your-username/TempleBot.git
 ```
+
+2. Install the required dependencies:
+
+```bash
+cd TempleBot
+pip install -r requirements.txt
+```
+
+3. Create a new Discord bot and obtain its token from the Discord Developer Portal.
+  
+4. Set the bot token as an environment variable named DISCORD_BOT_TOKEN.
+
+5. Run the bot:
+
+```bash
+python main.py
+```
+
+## Usage
+
+Once the bot is running, you can interact with it using the following commands:
+
+- `!terry`: Get biographical information about Terry Davis.
+- `!templeos`: Learn about the TempleOS operating system.
+- `!fact`: Receive an interesting fact or quote about Terry Davis or TempleOS.
+- `!resources`: Get links to relevant resources and documentation.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to add new features, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+- [Terry Davis](https://en.wikipedia.org/wiki/Terry_A._Davis) for his remarkable work on TempleOS.
+- The Discord.py library and its contributors for providing a powerful Python API for building Discord bots.
+
+## Show Your Support
+
+If you find this project valuable, please consider giving it a ⭐️ on GitHub!
