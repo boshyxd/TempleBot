@@ -7,9 +7,9 @@
  <br>
 </div>
 
-TempleBot is a Discord bot that provides information about Terry Davis, the creator of TempleOS, and his unique operating system, TempleOS. This bot aims to educate and inspire users about Terry Davis's remarkable journey, his accomplishments, and the fascinating world of TempleOS.
+TempleBot is a Discord bot that provides information about [Terry Davis](https://en.wikipedia.org/wiki/Terry_A._Davis), the creator of [TempleOS](https://en.wikipedia.org/wiki/TempleOS), and his unique operating system, TempleOS. This bot aims to educate and inspire users about Terry Davis's remarkable journey, his accomplishments, and the fascinating world of TempleOS.
 
-## Features
+## Purpose
 
 - Display biographical information about Terry Davis
 - Explain the purpose and features of TempleOS
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 3. Create a new Discord bot and obtain its token from the Discord Developer Portal.
   
-4. Set the bot token as an environment variable named DISCORD_BOT_TOKEN.
+4. Set the bot token as an environment variable named ``DISCORD_BOT_TOKEN``.
 
 5. Run the bot:
 
@@ -59,7 +59,74 @@ Once the bot is running, you can interact with it using the following commands:
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or want to add new features, feel free to open an issue or submit a pull request.
+> [!NOTE]
+> Contributions are welcome! If you find any issues or want to add new features, feel free to open an issue or submit a pull request.
+
+Here's how you can contribute:
+
+1. Fork the repository
+   
+2. Create a new branch:
+
+```bash
+git checkout -b my-new-feature
+```
+
+3. Make your changes and commit them:
+
+```bash
+git commit -am 'Add some feature'
+```
+
+4. Push to the branch:
+
+```bash
+git push origin my-new-feature
+```
+
+5. Submit a pull request
+   
+## JSON File Structure
+The bot uses JSON files to store quotes and GIFs. Here's an explanation of the structure:
+
+### Quotes
+
+The ``quotes.json`` file contains an array of ``quotes``. Each quote is a ``string``. Here's an example:
+
+```json
+{
+    "quotes": [
+        "This is a quote!"
+    ]
+}
+```
+> [!IMPORTANT]
+> To add a new quote, simply append it to the ``quotes`` array.
+
+### GIFs
+   
+The ``gifs.json`` file contains an array of GIF objects. Each object has two properties: ``url`` (the URL of the GIF) and ``probability`` (an integer representing the probability of displaying the GIF). Here's an example:
+
+```json
+{
+    "gifs": [
+      {
+        "url": "https://example.com/gif1.gif",
+        "probability": 90
+      },
+      {
+        "url": "https://example.com/gif2.gif",
+        "probability": 90
+      },
+      {
+        "url": "https://example.com/gif3.gif",
+        "probability": 15
+      }
+    ]
+}
+```
+> [!IMPORTANT]
+> To add a new GIF, append a new object to the ``gifs`` array with the appropriate ``url`` and ``probability`` values.
 
 ## License
 
