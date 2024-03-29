@@ -9,6 +9,11 @@ with open('quotes.json') as f:
     quotes_data = json.load(f)
 quotes = quotes_data['quotes']
 
+# Load the gifs from the JSON file
+with open('gifs.json') as f:
+    gifs_data = json.load(f)
+gifs = gifs_data['gifs']
+
 # Set up the bot
 intents = discord.Intents.default()
 intents.members = True
@@ -51,6 +56,30 @@ async def quote(ctx):
 async def resources(ctx):
     await ctx.send("**Here are some relevant resources:**\n\nTempleOS website: <https://templeos.org>\nTerry Davis documentary: <https://www.youtube.com/watch?v=UCgoxQCf5Jg&pp=ygUXdGVycnkgZGF2aXMgZG9jdW1lbnRhcnk%3D>\nTempleOS GitHub repository: <https://github.com/cia-foundation/TempleOS>\nTerry Davis Wikipedia page: <https://en.wikipedia.org/wiki/Terry_A._Davis>")
 
+# Hybrid command to get a random gif
+@bot.hybrid_command(name='gif', description='Get a random gif')
+async def gif(ctx):
+    # Calculate the total probability
+    total_probability = sum(gif['probability'] for gif in gifs)
+
+    # Generate a random number between 0 and the total probability
+    random_number = random.uniform(0, total_probability)
+
+    # Iterate through the gifs and select the first one with a probability range that includes the random number
+    current_probability = 0
+    selected_gif = None
+    for gif in gifs:
+        current_probability += gif['probability']
+        if random_number < current_probability:
+            selected_gif = gif
+            break
+
+    # Send the selected gif
+    if selected_gif:
+        await ctx.send(selected_gif['url'])
+    else:
+        await ctx.send('No gifs found.')
+
 # Hybrid command to display available commands
 @bot.hybrid_command(name='help', description='List available commands')
 async def help(ctx):
@@ -61,6 +90,7 @@ async def help(ctx):
 !templeos: Learn about the TempleOS operating system.
 !quote: Receive an interesting fact or quote about Terry Davis or TempleOS.
 !resources: Get links to relevant resources and documentation.
+!gif: Generate a random Terry Davis or TempleOS-related gif.
 !help: Displays this help message.
 """
     await ctx.send(commands_list)
