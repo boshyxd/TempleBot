@@ -71,14 +71,19 @@ Here's how you can contribute:
 ```bash
 git checkout -b my-new-feature
 ```
+3. Make your changes and then add them:
 
-3. Make your changes and commit them:
+ ```bash
+git add --all
+```
+
+4. Make your changes and commit them:
 
 ```bash
 git commit -am 'Add some feature'
 ```
 
-4. Push to the branch:
+5. Push to the branch:
 
 ```bash
 git push origin my-new-feature
