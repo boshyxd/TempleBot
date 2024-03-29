@@ -1,0 +1,16 @@
+{
+    "gifs": [
+      {
+        "url": "https://example.com/gif1.gif",
+        "probability": 90
+      },
+      {
+        "url": "https://example.com/gif2.gif",
+        "probability": 90
+      },
+      {
+        "url": "https://example.com/gif3.gif",
+        "probability": 5
+      }
+    ]
+  }
