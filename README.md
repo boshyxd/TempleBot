@@ -2,7 +2,7 @@
  <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/TempleOS_logo.png" alt="TempleBot Logo" width="200" height="200">
  <h1>TempleBot</h1>
  <p>
-   <b>A Discord bot dedicated to Terry Davis and TempleOS</b>
+   <b>A Discord bot dedicated to Terry Davis and TempleOS.</b>
  </p>
  <br>
 </div>
