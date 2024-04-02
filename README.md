@@ -7,7 +7,7 @@
  <br>
 </div>
 
-TempleBot is a Discord bot that provides information about [Terry Davis](https://en.wikipedia.org/wiki/Terry_A._Davis), the creator of [TempleOS](https://en.wikipedia.org/wiki/TempleOS), and his unique operating system, TempleOS. This bot aims to educate and inspire users about Terry Davis's remarkable journey, his accomplishments, and the fascinating world of TempleOS.
+TempleBot is a simple python Discord bot that provides information about [Terry Davis](https://en.wikipedia.org/wiki/Terry_A._Davis), the creator of [TempleOS](https://en.wikipedia.org/wiki/TempleOS), and his unique operating system, TempleOS. This bot aims to educate and inspire users about Terry Davis's remarkable journey, his accomplishments, and the fascinating world of TempleOS.
 
 ## Purpose
 
