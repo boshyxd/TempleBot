@@ -2,12 +2,12 @@
  <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/TempleOS_logo.png" alt="TempleBot Logo" width="200" height="200">
  <h1>TempleBot</h1>
  <p>
-   <b>A Discord bot dedicated to Terry Davis and TempleOS</b>
+   <b>A Discord bot dedicated to Terry Davis and TempleOS.</b>
  </p>
  <br>
 </div>
 
-TempleBot is a Discord bot that provides information about [Terry Davis](https://en.wikipedia.org/wiki/Terry_A._Davis), the creator of [TempleOS](https://en.wikipedia.org/wiki/TempleOS), and his unique operating system, TempleOS. This bot aims to educate and inspire users about Terry Davis's remarkable journey, his accomplishments, and the fascinating world of TempleOS.
+TempleBot is a simple python Discord bot that provides information about [Terry Davis](https://en.wikipedia.org/wiki/Terry_A._Davis), the creator of [TempleOS](https://en.wikipedia.org/wiki/TempleOS), and his unique operating system, TempleOS. This bot aims to educate and inspire users about Terry Davis's remarkable journey, his accomplishments, and the fascinating world of TempleOS.
 
 ## Purpose
 
@@ -55,6 +55,7 @@ Once the bot is running, you can interact with it using the following commands:
 - `!terry`: Get biographical information about Terry Davis.
 - `!templeos`: Learn about the TempleOS operating system.
 - `!fact`: Receive an interesting fact or quote about Terry Davis or TempleOS.
+- `!gif`: Recieve a random Terry David or TempleOS related GIF, some GIFs are more rare to occur than others.
 - `!resources`: Get links to relevant resources and documentation.
 
 ## Contributing
@@ -71,14 +72,19 @@ Here's how you can contribute:
 ```bash
 git checkout -b my-new-feature
 ```
+3. Make your changes and then add them:
 
-3. Make your changes and commit them:
+ ```bash
+git add --all
+```
+
+4. Make your changes and commit them:
 
 ```bash
 git commit -am 'Add some feature'
 ```
 
-4. Push to the branch:
+5. Push to the branch:
 
 ```bash
 git push origin my-new-feature
