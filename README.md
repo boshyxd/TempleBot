@@ -25,7 +25,7 @@ TempleBot is a simple python Discord bot that provides useful information about 
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repo:
 
 ```bash
 git clone https://github.com/your-username/TempleBot.git
