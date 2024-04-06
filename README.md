@@ -12,7 +12,7 @@ TempleBot is a simple python Discord bot that provides useful information about 
 ## Purpose
 
 - Display biographical information about Terry Davis
-- Explain the purpose and features of TempleOS
+- Explain the purpose, features, and creation of TempleOS
 - Share interesting facts and quotes related to Terry Davis and TempleOS
 - Provide links to relevant resources and documentation
 
