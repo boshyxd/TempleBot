@@ -55,8 +55,9 @@ Once the bot is running, you can interact with it using the following commands:
 - `!terry`: Get biographical information about Terry Davis.
 - `!templeos`: Learn about the TempleOS operating system.
 - `!fact`: Receive an interesting fact or quote about Terry Davis or TempleOS.
-- `!gif`: Recieve a random Terry David or TempleOS related GIF, some GIFs are more rare to occur than others.
+- `!gif`: Receive a random Terry Davis or TempleOS related GIF, some GIFs are more rare to occur than others.
 - `!resources`: Get links to relevant resources and documentation.
+- `!colors`: Display the 16-color palette used in TempleOS with color names and hex codes.
 
 ## Contributing
 
